@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive design settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>Cart - Sugar Bloom</title>
+
+  <!-- Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../bakery/styles.css"> <!-- Shared Global main Stylesheet -->
+  <link rel="stylesheet" href="cart.css"> <!-- Page specified Stylesheet -->
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Sugar Bloom</div> <!-- Brand Logo -->
+      <nav>
+        <!-- Navigation Links -->
+        <ul class="nav-list">
+          <li><a href="../bakery/index.html">Home</a></li>
+          <li><a href="../bakery/shop/shop.html">Shop</a></li>
+          <li><a href="../bakery/about.html">About</a></li>
+          <li><a href="../bakery/contact.html">Contact</a></li>
+          <li><a href="../bakery/cart.html">Cart (0)</a></li> <!-- Placeholder value; JS updates it -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <div class="container">
+      <h1>Your Cart</h1>
+
+      <!-- Empty Cart Message -->
+      <div class="empty-cart-message" style="display: none;">
+        <p>Your cart is currently empty.</p>
+        <a href="../bakery/shop/shop.html" class="btn">Continue Shopping</a>
+      </div>
+
+      <!-- Cart Items (populated by JS) -->
+      <div class="cart-items">
+        <!-- JavaScript will populate cart items here -->
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <p>Total: <span id="cart-total">AED 0.00</span></p>
+        <button id="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sugar Bloom. All rights reserved.</p>
+    </div>
+  </footer>
+ <!-- Linking Javascript -->
+  <script src="../bakery/script.js"></script>
+</body>
+</html>

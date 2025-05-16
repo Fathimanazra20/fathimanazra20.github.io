@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive design settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page Title -->
+  <title>Shop - Sugar Bloom</title>
+
+  <!-- Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" /> <!-- Shared Global main Stylesheet -->
+  <link rel="stylesheet" href="shop.css" /> <!-- Page specified Stylesheet -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Sugar Bloom</div> <!-- Brand Logo -->
+      <nav>
+        <!-- Navigation Links -->
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../shop/shop.html">Shop</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../cart.html">Cart (0)</a></li> <!-- Placeholder value; JS updates it -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Shop Category Section -->
+  <section class="shop-intro">
+    <div class="container">
+      <h1 class="section-title">Our Shop</h1>
+      <p class="intro-text">Select a category to explore our handcrafted treats.</p>
+      <!-- Category Items -->
+      <div class="category-grid">
+        <a href="cakes.html" class="category-card">
+          <img src="images/Basque Cheesecake.jpeg" alt="Cake">
+          <h3>Cakes</h3>
+        </a>
+        <a href="pastry.html" class="category-card">
+          <img src="images/download (4).jpeg" alt="Pastry">
+          <h3>Pastry</h3>
+        </a>
+        <a href="breads.html" class="category-card">
+            <img src="images/Rosemary Garlic Focaccia Recipe.jpeg" alt="Breads">
+            <h3>Baked Goods</h3>
+          </a>
+        <a href="drinks.html" class="category-card">
+            <img src="images/hot choco.jpeg" alt="drinks">
+            <h3>Drinks</h3>
+          </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sugar Bloom. All rights reserved.</p>
+    </div>
+  </footer>
+
+ <!-- JavaScript -->
+ <script src="../script.js"></script>
+ <script>
+  //Ensures cart count updates when this page loads
+   document.addEventListener('DOMContentLoaded', () => {
+     if (typeof updateCartCount === 'function') {
+       updateCartCount();
+     }
+   });
+ </script>
+ 
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* Cart Page Global Styles */
+body {
+font-family: 'Open Sans', sans-serif; /* Clean, readable font */
+background-color: #F9F5F0; /* Light background for contrast */
+color: #333; /* Default text color */
+margin: 0; /* Remove default body margin */
+}
+
+/* Cart Section Container */
+.cart-section {
+padding: 80px 20px;
+background: #fff;
+text-align: center; /* Center all content inside */
+}
+
+.cart-section h1 {
+font-family: 'Playfair Display', serif; /* Decorative font for heading */
+font-size: 2.5rem;
+margin-bottom: 2rem;
+}
+
+/* Cart Items Container */
+.cart-items {
+max-width: 800px;
+margin: 0 auto 2rem; /* Center and space below */
+display: flex;
+flex-direction: column; /* Stack items vertically */
+gap: 20px; /* Space between items */
+}
+
+/* Individual Cart Item Style */
+.cart-item {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background: #fff;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+/* Product Image */
+.cart-item img {
+width: 80px;
+height: 80px;
+object-fit: cover; /* Maintain aspect ratio, crop overflow */
+border-radius: 8px;
+margin-right: 20px;
+}
+
+/* Cart Item Info Section */
+.cart-item-info {
+flex: 1;
+text-align: left;
+}
+
+.cart-item-info h3 {
+margin: 0;
+font-size: 1.1rem;
+color: #333;
+}
+
+.cart-item-info p {
+margin: 0.3rem 0;
+color: #666;
+font-size: 0.95rem;
+}
+
+/* Quantity Buttons */
+.cart-item-info button {
+background-color: #f0f0f0;
+border: none;
+margin: 0 5px;
+padding: 4px 10px;
+font-weight: bold;
+cursor: pointer;
+border-radius: 4px;
+}
+
+.cart-item-info button:hover {
+background-color: #ddd; /* Slight darkening on hover */
+}
+
+/* Item Price */
+.cart-item-price {
+font-weight: 600;
+color: #a67c52; /* Brand brown */
+font-size: 1rem;
+min-width: 100px;
+text-align: right;
+}
+
+/* Remove Item Link */
+.remove-item {
+background-color: transparent;
+border: none;
+color: #cc0000; /* Bright red */
+cursor: pointer;
+font-size: 0.9rem;
+text-decoration: underline;
+margin-left: 10px;
+}
+
+/* Cart Summary (Total + Checkout) */
+.cart-summary {
+max-width: 800px;
+margin: 0 auto;
+padding-top: 20px;
+font-size: 1.25rem;
+font-weight: 600;
+color: #333;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+/* Checkout Button */
+#checkout-btn {
+background-color: #a67c52;
+color: white;
+border: none;
+padding: 12px 24px;
+border-radius: 6px;
+font-weight: 600;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+background-color: #8b6240;
+}
+
+/* Empty Cart Message */
+.empty-cart-message {
+display: none; /* Hidden by default */
+max-width: 600px;
+margin: 0 auto 2rem;
+padding: 40px 20px;
+background-color: #fff4e6; /* Soft warm background */
+border: 1px solid #f0e0c0;
+border-radius: 10px;
+color: #555;
+font-size: 1.1rem;
+}
+
+/* Button inside empty cart message */
+.empty-cart-message .btn {
+display: inline-block;
+margin-top: 15px;
+background-color: #a67c52;
+color: white;
+padding: 10px 20px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 600;
+transition: background-color 0.3s ease;
+}
+
+.empty-cart-message .btn:hover {
+background-color: #8b6240;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+.cart-item {
+flex-direction: column; /* Stack image and text */
+align-items: flex-start;
+}
+
+.cart-item img {
+margin-bottom: 10px;
+}
+
+.cart-summary {
+flex-direction: column;
+gap: 20px;
+text-align: center;
+}
+
+.cart-item-price {
+text-align: left;
+margin-top: 10px;
+}
+}

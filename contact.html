@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive design settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
+  <title>Contact Us - Sugar Bloom</title>
+
+  <!-- Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../bakery/styles.css"> <!-- Shared Global main Stylesheet -->
+  <link rel="stylesheet" href="contact.css">  <!-- Page specified Stylesheet -->
+
+  <!-- Google Fonts for typography -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+    <!-- Header Section -->
+    <header class="header">
+    <div class="container">
+      <div class="logo">Sugar Bloom</div> <!-- Brand Logo -->
+      <nav>
+        <!-- Navigation Links-->
+        <ul class="nav-list">
+          <li><a href="../bakery/index.html">Home</a></li>
+          <li><a href="../bakery/shop/shop.html">Shop</a></li>
+          <li><a href="../bakery/about.html">About</a></li>
+          <li><a href="../bakery/contact.html">Contact</a></li>
+          <li><a href="../bakery/cart.html">Cart (0)</a></li> <!-- Placeholder value; JS updates it -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact section: contact details & contact form -->
+  <section class="contact-section reveal">
+    <div class="container contact-container">
+      <!-- Contact Deatails -->
+      <div class="contact-info">
+        <h2>We'd Love to Hear From You</h2>
+        <p><strong>Phone:</strong> +971 55 123 4567</p>
+        <p><strong>Email:</strong> hello@sugarbloom.ae</p>
+        <p><strong>Location:</strong> Dubai, UAE</p>
+      </div>
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Locations -->
+  <section class="location-section reveal">
+    <div class="container">
+      <h2 class="section-title">Our Stores</h2>
+      <div class="locations">
+        <div class="location-box">
+          <h3>Downtown Dubai</h3>
+          <p>123 Main Street, Near Mall Avenue</p>
+          <p>Dubai, UAE</p>
+        </div>
+        <div class="location-box">
+          <h3>Jumeirah Beach</h3>
+          <p>Shop 45, Beach Walk Plaza</p>
+          <p>Dubai, UAE</p>
+        </div>
+        <div class="location-box">
+          <h3>Al Barsha</h3>
+          <p>Opposite City Centre Mall</p>
+          <p>Dubai, UAE</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section reveal">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq">
+        <!-- Each FAQ item with toggle behaviour -->
+        <div class="faq-item">
+          <div class="faq-toggle">
+            <h4>Do you offer same-day delivery?</h4>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we do! Orders placed before 2 PM are eligible for same-day delivery within Dubai.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-toggle">
+            <h4>Are your cakes freshly baked?</h4>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. Everything is baked fresh daily with high-quality ingredients.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-toggle">
+            <h4>Do you cater for events?</h4>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we cater for birthdays, weddings, and corporate events. Contact us for a custom quote.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+<section class="community">
+    <div class="container">
+      <h2>Join our community</h2>
+      <p>Follow us on social media for updates, and for furthur faq's contact us.</p>
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Instagram"><img src="images/instagram1.png" alt="Instagram"></a>
+        <a href="#" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#" target="_blank" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sugar Bloom. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Linking Javascript -->
+  <script src="../bakery/script.js"></script>
+  <script>
+    //Ensures cart count updates when this page loads
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof updateCartCount === 'function') {
+        updateCartCount();
+      }
+    });
+  </script>
+  
+
+</body>
+</html>

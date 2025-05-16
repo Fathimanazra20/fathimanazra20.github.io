@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive design settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Page Title -->
+  <title>Sugar Bloom</title>
+
+  <!-- Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Sugar Bloom</div> <!-- Brand Logo -->
+      <nav>
+        <!-- Navigation Links -->
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop/shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html" id="cartToggle">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Slide-in Cart Panel (hidden by default, toggled with JS) -->
+  <div id="cartPanel" class="cart-panel">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="close-btn">&times;</button> <!-- Close cart panel -->
+    </div>
+    <div class="cart-items"></div> <!-- JS will populate cart items here -->
+    <div class="cart-footer">
+      <p>Total: <span id="cart-total">AED 0.00</span></p>
+      <a href="cart.html" class="checkout-btn">Go to Cart</a>
+    </div>
+  </div>
+
+  <!-- Overlay for cart background -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Hero Section with CTA -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Simple Indulgence</h1>
+      <p>Handmade with love, from our kitchen to yours.</p>
+      <a href="shop/shop.html" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Forever Favourites Gallery Section -->
+  <section class="favourites-section">
+    <h2 class="section-title">Forever Favourites</h2>
+    <div class="favourites-grid">
+      <!-- Image gallery of popular items -->
+      <img src="images/lemon blueberry.jpeg" class="item item1" alt="shop">
+      <img src="images/nutella stuffed.jpeg" class="item item2" alt="shop">
+      <img src="images/Caramel Hazelnut Iced Coffee.jpeg" class="item item3" alt="shop">
+      <img src="images/Coffee Hazelnut Tart.jpeg" class="item item4" alt="shop">
+      <img src="images/espresso.jpeg" class="item item5" alt="shop">
+    </div>
+    <!-- Shop Now link under gallery -->
+    <div class="shop-now-container">
+      <a href="../bakery/shop/shop.html" class="shop-now-link">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Best Selling Banner Section -->
+  <section class="best-selling-section"> 
+    <h2 class="section-heading">Best Selling</h2>
+    <p class="section-subheading">Our all-time customer favorites</p>
+
+    <!-- Two-image banner layout -->
+    <section class="split-banner">
+      <div class="banner-container">
+        <div class="banner-image">
+          <img src="images/banner-left.jpg" alt="Left Cake Banner">
+        </div>
+        <div class="banner-text">Simplicity, beauty & handmade love</div>
+        <div class="banner-image">
+          <img src="images/banner-right.jpg" alt="Right Cake Banner">
+        </div>
+      </div>
+    </section>
+  </section> 
+
+  <!-- Community Section with Social Icons -->
+  <section class="community">
+    <div class="container">
+      <h2>Join our community</h2>
+      <p>Follow us on social media for updates, offers and a daily dose of sweetness.</p>
+      <div class="social-icons">
+        <!-- Social media icon links -->
+        <a href="#" target="_blank" aria-label="Instagram"><img src="images/instagram1.png" alt="Instagram"></a>
+        <a href="#" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#" target="_blank" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sugar Bloom. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript to handle smooth functionality and interactions -->
+  <script src="script.js"></script>
+
+</body>
+</html>

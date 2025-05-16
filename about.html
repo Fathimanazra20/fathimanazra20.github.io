@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and responsive design settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Page Title -->
+  <title>About Us - Sugar Bloom</title>
+
+  <!-- Google Fonts for Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" /> <!-- Shared Global main Stlyesheet -->
+  <link rel="stylesheet" href="about.css" /> <!-- Page specified Stylesheet -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Sugar Bloom</div> <!-- Brand Logo -->
+      <nav>
+        <!-- Navigation Links -->
+        <ul class="nav-list">
+          <li><a href="../bakery/index.html">Home</a></li>
+          <li><a href="../bakery/shop/shop.html">Shop</a></li>
+          <li><a href="../bakery/about.html">About</a></li>
+          <li><a href="../bakery/contact.html">Contact</a></li>
+          <li><a href="../bakery/cart.html">Cart (0)</a></li> <!-- Placeholder value; JS updates it -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section 1: Introduction -->
+  <section class="about-section">
+    <h2>Welcome to Sugar Bloom</h2>
+    <p>What started as a tiny home bakery has blossomed into a beloved sweet spot for dessert lovers across the city. At Sugar Bloom, we craft every treat with love, care, and the finest ingredients we can find.</p>
+    <img src="images/inside.jpeg" alt="Our Bakery" class="about-image">
+  </section>
+
+  <!-- Section 2: Story with Side-by-Side Layout -->
+  <section class="about-section alt">
+    <h2>Our Journey</h2>
+    <div class="team">
+      <div class="team-text">
+        <p>Founded by a passionate baker, Sugar Bloom is all about handmade indulgence. Every cookie, cake, and tart is a result of our love for simple ingredients and beautiful flavors.</p>
+        <p>We believe in creating moments — from a bite of cheesecake shared with friends to a decadent chocolate cake that turns an ordinary day into something special.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Invitation -->
+  <section class="about-section">
+    <h2>Visit Us Anytime</h2>
+    <p>Come by our kitchen, say hello, and take home your favorite treats. We're always baking something new — just for you.</p>
+    <div class="visit">
+      <img src="images/download.jpeg" alt="Our Storefront">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sugar Bloom. All rights reserved.</p>
+    </div>
+  </footer>
+
+ <!-- Linking JavaScript -->
+ <script src="../bakery/script.js"></script>
+<script>
+  //Ensures cart count updates when this page loads
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof updateCartCount === 'function') {
+      updateCartCount();
+    }
+  });
+</script>
+
+
+</body>
+</html>

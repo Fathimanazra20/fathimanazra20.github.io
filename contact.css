@@ -1,0 +1,129 @@
+/* Contact, Location, FAQ, and Social Sections */
+.contact-section, .location-section, .faq-section, .social-section {
+padding: 80px 20px; /* Vertical spacing for each section */
+}
+
+/* === Contact Section Layout === */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
+  gap: 40px; /* Space between form and info */
+}
+
+.contact-info, .contact-form {
+  flex: 1; /* Equal width for both columns */
+  min-width: 280px; /* Ensures responsive stacking */
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column; /* Stack form fields vertically */
+  gap: 20px; /* Space between form elements */
+}
+
+/* === Contact Form Elements === */
+.contact-form input, .contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc; /* Light border for fields */
+  border-radius: 6px; /* Rounded corners */
+}
+
+.contact-form button {
+  background-color: #A67C52; /* Warm brown background */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #8b6240; /* Darker on hover */
+}
+
+/* === Locations Section Layout === */
+.locations {
+  display: flex;
+  gap: 30px; /* Space between location boxes */
+  flex-wrap: wrap; /* Responsive layout */
+}
+
+.location-box {
+  flex: 1; /* Equal width boxes */
+  min-width: 260px; /* Stack when narrow */
+  background: #f9f5f0; /* Light cream background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded edges */
+}
+
+/* === FAQ Section === */
+.faq-item {
+  margin-bottom: 20px; /* Space between FAQ items */
+}
+
+.faq-item h4 {
+  margin: 0 0 8px;
+  font-weight: bold; /* Emphasize question */
+}
+
+/* === Social Media Section === */
+.social-section {
+  text-align: center;
+  background: #f4f0e8; /* Light beige background */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center icons */
+  gap: 20px; /* Space between icons */
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 1.5rem; /* Size of icons */
+  color: #A67C52; /* Brand accent color */
+}
+
+.social-icons a:hover {
+  color: #8b6240; /* Darker on hover */
+}
+
+/* === Scroll Reveal Animation === */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px); /* Slight upward motion */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0); /* Reveal animation */
+}
+
+/* === FAQ Accordion Functionality === */
+.faq-toggle {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd; /* Line between items */
+}
+
+.faq-answer {
+  max-height: 0; /* Hidden by default */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 1rem; /* Horizontal padding only */
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px; /* Expand when active */
+  padding-bottom: 1rem; /* Extra space below text */
+}
+
+.faq-toggle span {
+  font-size: 1.5rem;
+  color: #A67C52; /* Icon or arrow color */
+}

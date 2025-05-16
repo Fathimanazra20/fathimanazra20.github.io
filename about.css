@@ -1,0 +1,103 @@
+/* Global Styles for About Page */
+body {
+font-family: 'Open Sans', sans-serif; /* Clean, modern font */
+color: #333; /* Default text color */
+background: #F9F5F0; /* Light beige background */
+margin: 0;
+padding: 0;
+}
+
+/* General About Section */
+.about-section {
+padding: 80px 20px; /* Spacing around section */
+background: #fff; /* White background for contrast */
+text-align: center; /* Center-align text and elements */
+}
+
+/* Alternate Section Style (e.g., for visual separation) */
+.about-section.alt {
+background: #f5ece3; /* Slightly tinted background */
+}
+
+/* Headings inside About Sections */
+.about-section h2 {
+font-family: 'Playfair Display', serif; /* Stylish serif heading */
+font-size: 2.5rem;
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+
+/* Paragraphs inside About Sections */
+.about-section p {
+max-width: 800px; /* Limit width for readability */
+margin: 0 auto 2rem; /* Centered with bottom spacing */
+font-size: 1.05rem;
+line-height: 1.7; /* Comfortable reading line height */
+color: #555; /* Softer dark gray for less eye strain */
+}
+
+/* General Image Style in About Sections */
+.about-image {
+max-width: 100%;
+height: auto;
+border-radius: 12px; /* Rounded corners */
+margin-top: 20px;
+}
+
+/* Full Width Hero-style Image */
+.about-image.full {
+display: block;
+width: 100%;
+max-height: 500px; /* Limit height */
+object-fit: cover; /* Crop and fill space nicely */
+border-radius: 0; /* No rounding for hero image */
+margin-bottom: 2rem;
+}
+
+/* Team Section Layout */
+.team {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 40px; /* Space between image and text */
+flex-wrap: wrap; /* Stack items on small screens */
+margin-top: 40px;
+}
+
+/* Image of a Team Member */
+.team-image {
+width: 280px;
+border-radius: 12px; /* Rounded edges */
+}
+
+/* Text Next to Team Image */
+.team-text {
+max-width: 500px;
+font-size: 1rem;
+color: #444;
+line-height: 1.6; /* Comfortable spacing */
+text-align: left;
+}
+
+/* Visit Section Image */
+.visit img {
+max-width: 100%;
+border-radius: 12px;
+margin-top: 1.5rem;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+.team {
+flex-direction: column; /* Stack vertically */
+}
+
+.about-section h2 {
+font-size: 2rem; /* Smaller headings */
+}
+
+.about-section p {
+font-size: 1rem; /* Slightly smaller text for mobile */
+}
+}
