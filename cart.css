@@ -185,3 +185,29 @@ align-items: flex-start;
     margin-top: 10px;
   }
 }
+/* Container for Continue Shopping and Checkout button */
+.cart-actions {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem; 
+  margin-top: 1rem; 
+}
+
+/* Styling for the "Continue Shopping" link */
+.continue-shopping {
+  text-decoration: underline; 
+  color: #333; 
+  font-size: 1rem; 
+}
+
+/* Styling for the "Proceed to Checkout" button */
+#checkout-btn {
+  padding: 0.6rem 1.2rem; 
+  background-color: #d2691e; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 1rem; 
+  cursor: pointer; 
+}
